@@ -3,12 +3,13 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using Domain.Entities;
+using Domain.Interfaces.Repositories;
 using Domain.Results;
 using Microsoft.Extensions.Logging;
 
 namespace Data
 {
-    public sealed class PersonRepository : BaseRepository<Person>
+    public sealed class PersonRepository : BaseRepository<Person>, IPersonRepository
     {
         static ConcurrentDictionary<int, Person> _entities;
         static object _lock;
@@ -19,7 +20,7 @@ namespace Data
             _lock = new object();
         }
 
-        public PersonRepository(ILogger logger) : base(logger)
+        public PersonRepository(ILogger<PersonRepository> logger) : base(logger)
         {
         }
 

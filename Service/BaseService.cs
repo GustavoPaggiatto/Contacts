@@ -11,9 +11,9 @@ namespace Service
     public abstract class BaseService<T> : IService<T> where T : BaseEntity
     {
         protected readonly IRepository<T> _repository;
-        protected readonly ILogger _logger;
+        protected readonly ILogger<IService<T>> _logger;
 
-        public BaseService(IRepository<T> repository, ILogger logger)
+        public BaseService(IRepository<T> repository, ILogger<IService<T>> logger)
         {
             this._repository = repository;
             this._logger = logger;

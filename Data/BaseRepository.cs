@@ -9,9 +9,9 @@ namespace Data
 {
     public abstract class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
-        protected readonly ILogger _logger;
+        protected readonly ILogger<IRepository<T>> _logger;
 
-        public BaseRepository(ILogger logger)
+        public BaseRepository(ILogger<IRepository<T>> logger)
         {
             this._logger = logger;
         }
