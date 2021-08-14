@@ -13,6 +13,7 @@ namespace Domain.Results
                 this.Errors = new List<string>();
 
             this.Errors.Add(message);
+            this.HasError = true;
         }
     }
 

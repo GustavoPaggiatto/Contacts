@@ -1,6 +1,6 @@
 namespace Domain.VOs
 {
-    public struct Address
+    public sealed class Address
     {
         public string Country { get; private set; }
         public string State { get; private set; }
@@ -13,7 +13,6 @@ namespace Domain.VOs
             string state,
             string city,
             string line,
-            string lineTwo,
             string zipCode)
         {
             this.City = city;

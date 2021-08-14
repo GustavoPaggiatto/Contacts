@@ -26,7 +26,6 @@ namespace Data
 
         public virtual void Dispose()
         {
-            throw new NotImplementedException();
         }
     }
 }

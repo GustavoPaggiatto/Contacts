@@ -63,8 +63,13 @@ namespace Data
             {
                 var persons = new List<Person>();
 
-                foreach (Person p in _entities.Values)
-                    persons.Add(p.Clone() as Person);
+                foreach (int pId in _entities.Keys)
+                {
+                    var person = _entities[pId].Clone() as Person;
+
+                    person.Id = pId;
+                    persons.Add(person);
+                }
 
                 result.Content = persons;
             }
@@ -93,7 +98,8 @@ namespace Data
 
                 lock (_lock)
                 {
-                    lastId = _entities.Keys.Max();
+                    if (_entities.Count > 0)
+                        lastId = _entities.Keys.Max();
                 }
 
                 _entities.TryAdd(++lastId, instance);

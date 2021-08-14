@@ -81,4 +81,258 @@
  2021-08-14 12:43:26,442  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
  2021-08-14 12:43:26,442  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
  2021-08-14 12:43:26,443  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 13:29:32,781  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 13:29:32,870  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 13:29:32,871  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 13:29:32,871  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 13:29:32,871  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 13:30:49,773 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.NotSupportedException: Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'Domain.Entities.Person'. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+ ---> System.NotSupportedException: Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'Domain.Entities.Person'.
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, NotSupportedException ex)
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException_DeserializeNoConstructor(Type type, Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-14 13:49:19,338  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 13:49:19,405  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 13:49:19,406  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 13:49:19,406  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 13:49:19,406  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 13:57:29,674  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 13:57:29,742  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 13:57:29,743  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 13:57:29,743  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 13:57:29,743  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 13:59:18,747 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Service.BaseService`1.Insert(T instance) in C:\Users\Gustavo\Documents\Projetos\Contacts\Service\BaseService.cs:line 35
+   at Api.Controllers.PersonController`1.Insert(T person) in C:\Users\Gustavo\Documents\Projetos\Contacts\Api\Controllers\PersonController.cs:line 42
+   at Api.Controllers.LegalPersonController.Insert(LegalPerson person) in C:\Users\Gustavo\Documents\Projetos\Contacts\Api\Controllers\LegalPersonController.cs:line 20
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-14 13:59:23,240 ERROR Microsoft.AspNetCore.Server.Kestrel.? [?] - MESSAGE: Connection id "0HMAV8IGT2VI3", Request id "0HMAV8IGT2VI3:00000005": An unhandled exception was thrown by the application.
+ System.NotImplementedException: The method or operation is not implemented.
+   at Data.BaseRepository`1.Dispose() in C:\Users\Gustavo\Documents\Projetos\Contacts\Data\BaseRepository.cs:line 29
+   at Service.BaseService`1.Dispose() in C:\Users\Gustavo\Documents\Projetos\Contacts\Service\BaseService.cs:line 102
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|227_0(HttpProtocol protocol, Stack`1 events)
+2021-08-14 14:00:42,318  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:00:42,386  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:00:42,386  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:00:42,387  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:00:42,387  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:02:22,760 ERROR Microsoft.AspNetCore.Server.Kestrel.? [?] - MESSAGE: Connection id "0HMAV8KBLA77L", Request id "0HMAV8KBLA77L:00000005": An unhandled exception was thrown by the application.
+ System.NotImplementedException: The method or operation is not implemented.
+   at Data.BaseRepository`1.Dispose() in C:\Users\Gustavo\Documents\Projetos\Contacts\Data\BaseRepository.cs:line 29
+   at Service.BaseService`1.Dispose() in C:\Users\Gustavo\Documents\Projetos\Contacts\Service\BaseService.cs:line 106
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|227_0(HttpProtocol protocol, Stack`1 events)
+2021-08-14 14:03:23,864  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:03:23,929  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:03:23,929  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:03:23,930  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:03:23,930  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:22:56,488  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:22:56,557  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:22:56,558  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:22:56,558  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:22:56,559  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:25:00,586  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:25:00,655  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:25:00,656  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:25:00,656  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:25:00,656  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:26:11,989 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.InvalidOperationException: Each parameter in constructor 'Void .ctor(System.String, System.String, System.String, System.String, System.String, System.String)' on type 'Domain.VOs.Address' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. The match can be case-insensitive.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(ConstructorInfo constructorInfo, Type parentType)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-14 14:28:37,152  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:28:37,217  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:28:37,217  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:28:37,218  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:28:37,218  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:30:09,790  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:30:09,864  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:30:09,864  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:30:09,865  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:30:09,865  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:30:59,998  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:31:00,077  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:31:00,077  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:31:00,077  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:31:00,078  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:36:19,558  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:36:19,626  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:36:19,627  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:36:19,627  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:36:19,627  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:44:47,212  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:44:47,280  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:44:47,281  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:44:47,281  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:44:47,281  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:45:39,994 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:45:44,208 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:45:48,549 TRACE Data.PersonRepository.Insert [88] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:45:53,409 TRACE Data.PersonRepository.Insert [85] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:45:55,648 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:45:57,809 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:46:41,390 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:46:42,335 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:46:43,910 TRACE Data.PersonRepository.Insert [88] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:46:43,910 TRACE Data.PersonRepository.Insert [85] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:46:45,483 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:46:45,484 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:46:59,427 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:46:59,431 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:46:59,433 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:46:59,435 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:47:37,065 TRACE Api.Controllers.PersonController.Get [29] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:47:39,106 TRACE Service.PersonService.Get [95] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 14:47:40,546 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:47:51,048 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:47:51,048 TRACE Service.PersonService.Get [99] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 14:47:51,048 TRACE Api.Controllers.PersonController.Get [33] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:50:17,892  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 14:50:17,958  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 14:50:17,959  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 14:50:17,959  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 14:50:17,959  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 14:51:00,962 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:51:00,998 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:01,009 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:01,010 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:51:16,078 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:51:16,082 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:16,083 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:16,084 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:51:28,523 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:51:28,525 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:28,527 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:51:28,533 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:51:28,534 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:51:28,534 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:12,448 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:12,474 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:12,475 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:12,476 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:29,019 TRACE Api.Controllers.PersonController.Insert [40] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:29,021 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:29,022 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:52:29,028 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:52:29,029 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:29,030 TRACE Api.Controllers.PersonController.Insert [44] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:43,672 TRACE Api.Controllers.PersonController.Get [29] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:52:43,674 TRACE Service.PersonService.Get [95] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:43,676 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:52:43,679 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:52:43,680 TRACE Service.PersonService.Get [99] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 14:52:43,681 TRACE Api.Controllers.PersonController.Get [33] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:53:31,878 TRACE Api.Controllers.PersonController.Get [29] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:53:31,879 TRACE Service.PersonService.Get [95] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 14:53:31,880 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:53:31,881 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:53:31,882 TRACE Service.PersonService.Get [99] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 14:53:31,883 TRACE Api.Controllers.PersonController.Get [33] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:53:45,832 TRACE Api.Controllers.PersonController.Get [29] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 14:53:47,656 TRACE Service.PersonService.Get [95] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 14:53:49,212 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:55:12,486 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 14:55:12,488 TRACE Service.PersonService.Get [99] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 14:55:12,489 TRACE Api.Controllers.PersonController.Get [33] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 15:00:56,964  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 15:00:57,031  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 15:00:57,032  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 15:00:57,032  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 15:00:57,032  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 15:01:33,346 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 15:01:33,356 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 15:01:33,365 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:01:33,371 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:01:33,372 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 15:01:33,372 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 15:03:12,590 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 15:03:12,592 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 15:03:12,594 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:03:12,596 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:03:12,598 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 15:03:12,599 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 15:03:21,688 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 15:03:21,688 TRACE Service.PersonService.Get [95] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 15:03:21,688 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:03:21,704 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:03:21,704 TRACE Service.PersonService.Get [99] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 15:03:21,704 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 15:04:51,904 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 15:04:53,073 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 15:05:18,732 TRACE Data.PersonRepository.Update [124] - MESSAGE: Initializing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:05:18,733 TRACE Data.PersonRepository.Update [121] - MESSAGE: Finalizing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:05:18,734 TRACE Service.PersonService.Update [73] - MESSAGE: Finalizing Update(); class: BaseService; layer: Service.
+ 2021-08-14 15:05:18,734 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 15:05:41,774 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 15:05:42,979 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 15:05:46,932 TRACE Data.PersonRepository.Update [124] - MESSAGE: Initializing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 15:06:05,038 TRACE Data.PersonRepository.Update [121] - MESSAGE: Finalizing Update(); class: PersonRepository; layer: Data.
  

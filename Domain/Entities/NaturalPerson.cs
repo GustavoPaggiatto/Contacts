@@ -35,6 +35,11 @@ namespace Domain.Entities
             if (string.IsNullOrEmpty(this.Address.ZipCode))
                 result.AddError("Zip Code was not informed.");
 
+            Regex regex = new Regex("[^\\d-]");
+            
+            if (regex.IsMatch(this.Address.ZipCode))
+                result.AddError("Zip code is invalid (ex.: 11111-111)");
+
             if (string.IsNullOrEmpty(this.Name))
                 result.AddError("Name was not informed.");
 
@@ -47,7 +52,7 @@ namespace Domain.Entities
             if (string.IsNullOrEmpty(this.Document))
                 result.AddError("CPF was not informed.");
 
-            Regex regex = new Regex("[^\\d]");
+            regex = new Regex("[^\\d]");
             string doc = regex.Replace(this.Document, "");
 
             if (doc.Length != 11)

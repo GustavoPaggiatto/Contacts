@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces.Services;
@@ -11,21 +12,20 @@ using Microsoft.Extensions.Logging;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("api/person")]
-    public class PersonController : ControllerBase
+    public abstract class PersonController<T> : ControllerBase where T : Person
     {
-        private readonly ILogger<PersonController> _logger;
-        private readonly IPersonService _personService;
+        protected readonly ILogger<PersonController<T>> _logger;
+        protected readonly IPersonService _personService;
 
-        public PersonController(ILogger<PersonController> logger, IPersonService personService)
+        public PersonController(ILogger<PersonController<T>> logger, IPersonService personService)
         {
             _logger = logger;
             this._personService = personService;
         }
 
         [HttpGet]
-        [Route("get")]
-        public Result<IEnumerable<Person>> Get()
+        [Route("api/getpersons")]
+        public JsonResult Get()
         {
             this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
 
@@ -33,12 +33,14 @@ namespace Api.Controllers
 
             this._logger.LogTrace("Finalizing Get(); class: PersonController; layer: Api.");
 
-            return result;
+            return new JsonResult(result, new JsonSerializerOptions()
+            {
+                IgnoreReadOnlyFields = false,
+                IgnoreReadOnlyProperties = false
+            });
         }
 
-        [HttpPost]
-        [Route("insert")]
-        public Result Insert(Person person)
+        protected Result Insert(T person)
         {
             this._logger.LogTrace("Initializing Insert(); class: PersonController; layer: Api.");
 
@@ -49,9 +51,7 @@ namespace Api.Controllers
             return result;
         }
 
-        [HttpPost]
-        [Route("update")]
-        public Result Update(Person person)
+        protected Result Update(T person)
         {
             this._logger.LogTrace("Initializing Update(); class: PersonController; layer: Api.");
 
@@ -62,9 +62,7 @@ namespace Api.Controllers
             return result;
         }
 
-        [HttpPost]
-        [Route("delete")]
-        public Result Delete(Person instance)
+        protected Result Delete(T instance)
         {
             this._logger.LogTrace("Initializing Delete(); class: PersonController; layer: Api.");
 

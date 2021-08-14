@@ -31,6 +31,8 @@ namespace Service
 
                 if (validEntity.HasError)
                 {
+                    result = new Result();
+
                     foreach (string error in validEntity.Errors)
                         result.AddError(error);
                 }
@@ -57,11 +59,21 @@ namespace Service
 
                 if (validEntity.HasError)
                 {
+                    result = new Result();
+
                     foreach (string error in validEntity.Errors)
                         result.AddError(error);
                 }
                 else
+                {
+                    if (instance.Id <= 0)
+                    {
+                        result.AddError("Register not found.");
+                        return result;
+                    }
+
                     result = this._repository.Update(instance);
+                }
             }
             else
                 result = new Result();
@@ -77,7 +89,15 @@ namespace Service
             Result result = null;
 
             if (instance != null)
+            {
+                if (instance.Id <= 0)
+                {
+                    result.AddError("Register not found.");
+                    return result;
+                }
+
                 result = this._repository.Delete(instance);
+            }
             else
                 result = new Result();
 
