@@ -68,7 +68,9 @@ namespace Service
                 {
                     if (instance.Id <= 0)
                     {
+                        result = new Result();
                         result.AddError("Register not found.");
+
                         return result;
                     }
 
@@ -92,7 +94,9 @@ namespace Service
             {
                 if (instance.Id <= 0)
                 {
+                    result = new Result();
                     result.AddError("Register not found.");
+                    
                     return result;
                 }
 

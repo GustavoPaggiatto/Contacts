@@ -32,12 +32,15 @@ namespace Data
 
             try
             {
-                var entity = _entities[instance.Id];
-
-                if (entity != null)
+                if (_entities.Count > 0)
                 {
-                    Person removed;
-                    _entities.Remove(instance.Id, out removed);
+                    var entity = _entities[instance.Id];
+
+                    if (entity != null)
+                    {
+                        Person removed;
+                        _entities.Remove(instance.Id, out removed);
+                    }
                 }
             }
             catch (Exception ex)

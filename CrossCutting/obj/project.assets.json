@@ -106,6 +106,20 @@
         "runtime": {
           "bin/placeholder/Service.dll": {}
         }
+      },
+      "Visitor/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Visitor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Visitor.dll": {}
+        }
       }
     }
   },
@@ -254,6 +268,11 @@
       "type": "project",
       "path": "../Service/Service.csproj",
       "msbuildProject": "../Service/Service.csproj"
+    },
+    "Visitor/1.0.0": {
+      "type": "project",
+      "path": "../Visitor/Visitor.csproj",
+      "msbuildProject": "../Visitor/Visitor.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -261,7 +280,8 @@
       "Data >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
-      "Service >= 1.0.0"
+      "Service >= 1.0.0",
+      "Visitor >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -304,6 +324,9 @@
             },
             "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Service\\Service.csproj": {
               "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Service\\Service.csproj"
+            },
+            "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Visitor\\Visitor.csproj": {
+              "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Visitor\\Visitor.csproj"
             }
           }
         }

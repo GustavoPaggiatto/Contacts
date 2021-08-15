@@ -33,7 +33,8 @@ namespace Domain.Entities
 
             Regex regex = new Regex("[^\\d-]");
 
-            if (regex.IsMatch(this.Address.ZipCode))
+            if (this.Address.ZipCode != null &&
+                    regex.IsMatch(this.Address.ZipCode))
                 result.AddError("Zip code is invalid (ex.: 11111-111)");
 
             if (string.IsNullOrEmpty(this.Document))

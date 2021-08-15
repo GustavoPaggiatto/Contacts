@@ -335,4 +335,223 @@
  2021-08-14 15:05:42,979 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
  2021-08-14 15:05:46,932 TRACE Data.PersonRepository.Update [124] - MESSAGE: Initializing Update(); class: PersonRepository; layer: Data.
  2021-08-14 15:06:05,038 TRACE Data.PersonRepository.Update [121] - MESSAGE: Finalizing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:46:17,479  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 21:46:17,545  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 21:46:17,545  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 21:46:17,545  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 21:46:17,545  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 21:48:34,613 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:48:34,629 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:48:34,641 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:48:34,649 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:48:34,650 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:48:34,650 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:49:40,601 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:49:40,602 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:49:40,603 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:49:40,605 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:49:40,606 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:49:40,606 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:50:23,348 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 21:50:24,500 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 21:51:27,358  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 21:51:27,422  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 21:51:27,422  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 21:51:27,422  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 21:51:27,422  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 21:51:35,726 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:51:35,735 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:51:35,746 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:51:35,750 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:51:35,751 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:51:35,751 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:51:51,316 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 21:51:52,233 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 21:52:00,451 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 21:52:19,841 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 21:52:20,766 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 21:52:30,668 TRACE Data.PersonRepository.Update [124] - MESSAGE: Initializing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:53:00,299 TRACE Data.PersonRepository.Update [121] - MESSAGE: Finalizing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:53:03,619 TRACE Service.PersonService.Update [83] - MESSAGE: Finalizing Update(); class: BaseService; layer: Service.
+ 2021-08-14 21:53:04,596 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 21:54:28,394 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:54:28,403 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:54:28,430 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:54:28,433 TRACE Data.PersonRepository.Insert [90] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:54:28,434 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:54:28,434 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:54:39,688 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 21:54:39,690 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 21:54:39,691 TRACE Data.PersonRepository.Get [60] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:54:39,693 TRACE Data.PersonRepository.Get [57] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:54:39,694 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 21:54:39,694 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 21:55:29,942 TRACE Api.Controllers.PersonController.Delete [67] - MESSAGE: Initializing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 21:55:31,588 TRACE Service.PersonService.Delete [90] - MESSAGE: Initializing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 21:55:38,978 TRACE Api.Controllers.PersonController.Delete [71] - MESSAGE: Finalizing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 21:55:56,939 TRACE Api.Controllers.PersonController.Delete [67] - MESSAGE: Initializing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 21:55:58,173 TRACE Service.PersonService.Delete [90] - MESSAGE: Initializing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 21:56:01,549 TRACE Data.PersonRepository.Delete [31] - MESSAGE: Initializing Delete(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:56:54,950  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 21:56:55,018  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 21:56:55,019  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 21:56:55,019  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 21:56:55,019  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 21:57:18,908 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:57:18,917 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:57:18,929 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:57:18,934 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:57:18,935 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 21:57:18,935 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:57:31,618 TRACE Api.Controllers.PersonController.Delete [67] - MESSAGE: Initializing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 21:57:32,661 TRACE Service.PersonService.Delete [90] - MESSAGE: Initializing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 21:57:36,140 TRACE Data.PersonRepository.Delete [31] - MESSAGE: Initializing Delete(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:57:49,490 TRACE Data.PersonRepository.Delete [28] - MESSAGE: Finalizing Delete(); class: PersonRepository; layer: Data.
+ 2021-08-14 21:57:49,490 TRACE Service.PersonService.Delete [108] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 21:57:49,490 TRACE Api.Controllers.PersonController.Delete [71] - MESSAGE: Finalizing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 21:59:52,932 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 21:59:54,232 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:02:23,194  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 22:02:23,262  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 22:02:23,262  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 22:02:23,263  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 22:02:23,263  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 22:02:43,771 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:02:44,702 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:06,451 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:06,451 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:03:34,142 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:03:34,174 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:34,175 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:34,176 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:03:56,670 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:03:56,670 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:56,670 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:03:56,685 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:03:56,685 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:03:56,685 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:04:35,017 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:04:35,018 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:04:35,019 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:04:35,022 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:04:35,023 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:04:35,023 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:04:44,694 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:04:44,695 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 22:04:44,696 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:04:44,699 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:04:44,700 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:04:44,700 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:06:48,696 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:06:49,744 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 22:06:52,967 TRACE Service.PersonService.Update [83] - MESSAGE: Finalizing Update(); class: BaseService; layer: Service.
+ 2021-08-14 22:06:52,969 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:07:16,238 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:07:17,535 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 22:07:22,549 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:07:48,234 TRACE Api.Controllers.PersonController.Update [56] - MESSAGE: Initializing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:07:49,365 TRACE Service.PersonService.Update [52] - MESSAGE: Initializing Update(); class: BaseService; layer: Service.
+ 2021-08-14 22:07:54,586 TRACE Data.PersonRepository.Update [127] - MESSAGE: Initializing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:07:57,983 TRACE Data.PersonRepository.Update [124] - MESSAGE: Finalizing Update(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:07:57,983 TRACE Service.PersonService.Update [83] - MESSAGE: Finalizing Update(); class: BaseService; layer: Service.
+ 2021-08-14 22:07:57,983 TRACE Api.Controllers.PersonController.Update [60] - MESSAGE: Finalizing Update(); class: PersonController; layer: Api.
+ 2021-08-14 22:08:24,045 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:08:24,069 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 22:08:24,069 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:08:24,070 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:08:24,070 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:08:24,070 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:08:51,153 TRACE Api.Controllers.PersonController.Delete [67] - MESSAGE: Initializing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 22:08:52,136 TRACE Service.PersonService.Delete [90] - MESSAGE: Initializing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:08:54,968 TRACE Data.PersonRepository.Delete [31] - MESSAGE: Initializing Delete(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:09:01,027 TRACE Data.PersonRepository.Delete [28] - MESSAGE: Finalizing Delete(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:09:01,027 TRACE Service.PersonService.Delete [108] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:09:01,028 TRACE Api.Controllers.PersonController.Delete [71] - MESSAGE: Finalizing Delete(); class: PersonController; layer: Api.
+ 2021-08-14 22:09:12,026 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:09:12,027 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 22:09:12,027 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:09:12,028 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:09:12,028 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:09:12,029 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:12:37,058 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:12:37,532 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 22:12:37,533 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:12:37,533 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:12:37,534 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:19:55,267  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 22:19:55,349  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 22:19:55,350  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 22:19:55,350  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 22:19:55,350  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 22:20:02,301 TRACE Api.Controllers.PersonController.Insert [45] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:20:02,310 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:20:02,321 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:20:02,326 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:20:02,327 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 22:20:02,328 TRACE Api.Controllers.PersonController.Insert [49] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 22:20:09,351 TRACE Api.Controllers.PersonController.Get [30] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 22:20:09,356 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 22:20:09,359 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:20:09,363 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 22:20:09,364 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 22:20:09,364 TRACE Api.Controllers.PersonController.Get [34] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 23:42:57,859  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 23:42:57,923  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 23:42:57,923  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 23:42:57,924  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 23:42:57,924  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 23:43:47,109  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 23:43:47,176  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 23:43:47,177  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 23:43:47,177  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 23:43:47,177  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 23:44:02,416 TRACE Api.Controllers.PersonController.Insert [82] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:44:02,425 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:02,436 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:02,441 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:02,442 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:02,442 TRACE Api.Controllers.PersonController.Insert [86] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:44:16,389 TRACE Api.Controllers.PersonController.Insert [82] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:44:16,392 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:16,394 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:16,398 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:16,406 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:16,409 TRACE Api.Controllers.PersonController.Insert [86] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:44:32,712 TRACE Api.Controllers.PersonController.Get [38] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 23:44:34,025 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:34,027 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:34,030 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:44:34,031 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 23:44:44,206 TRACE Visitor.PersonJsonVisitor.Visit [27] - MESSAGE: Initializing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:44:53,069 TRACE Visitor.PersonJsonVisitor.Visit [26] - MESSAGE: Finalizing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:45:01,541 TRACE Visitor.PersonJsonVisitor.Visit [27] - MESSAGE: Initializing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:45:01,544 TRACE Visitor.PersonJsonVisitor.Visit [26] - MESSAGE: Finalizing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:45:08,199 TRACE Api.Controllers.PersonController.Get [35] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
+ 2021-08-14 23:45:52,568  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-14 23:45:52,637  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-14 23:45:52,637  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-14 23:45:52,637  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-14 23:45:52,638  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\Gustavo\Documents\Projetos\Contacts\Api
+ 2021-08-14 23:46:06,220 TRACE Api.Controllers.PersonController.Insert [82] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:46:06,230 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:06,241 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:06,246 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:06,247 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:06,247 TRACE Api.Controllers.PersonController.Insert [86] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:46:14,393 TRACE Api.Controllers.PersonController.Insert [82] - MESSAGE: Initializing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:46:14,394 TRACE Service.PersonService.Insert [24] - MESSAGE: Initializing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:14,395 TRACE Data.PersonRepository.Insert [96] - MESSAGE: Initializing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:14,397 TRACE Data.PersonRepository.Insert [93] - MESSAGE: Finalizing Insert(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:14,398 TRACE Service.PersonService.Insert [45] - MESSAGE: Finalizing Insert(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:14,398 TRACE Api.Controllers.PersonController.Insert [86] - MESSAGE: Finalizing Insert(); class: PersonController; layer: Api.
+ 2021-08-14 23:46:20,308 TRACE Api.Controllers.PersonController.Get [38] - MESSAGE: Initializing Get(); class: PersonController; layer: Api.
+ 2021-08-14 23:46:20,309 TRACE Service.PersonService.Get [115] - MESSAGE: Initializing Get(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:20,310 TRACE Data.PersonRepository.Get [63] - MESSAGE: Initializing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:20,313 TRACE Data.PersonRepository.Get [60] - MESSAGE: Finalizing Get(); class: PersonRepository; layer: Data.
+ 2021-08-14 23:46:20,313 TRACE Service.PersonService.Get [119] - MESSAGE: Finalizing Delete(); class: BaseService; layer: Service.
+ 2021-08-14 23:46:20,314 TRACE Visitor.PersonJsonVisitor.Visit [27] - MESSAGE: Initializing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:46:20,328 TRACE Visitor.PersonJsonVisitor.Visit [26] - MESSAGE: Finalizing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:46:20,329 TRACE Visitor.PersonJsonVisitor.Visit [27] - MESSAGE: Initializing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:46:20,331 TRACE Visitor.PersonJsonVisitor.Visit [26] - MESSAGE: Finalizing Visit(); class: PersonJsonVisitor; layer: visitor.
+ 2021-08-14 23:46:20,332 TRACE Api.Controllers.PersonController.Get [35] - MESSAGE: Finalizing Get(); class: PersonController; layer: Api.
  

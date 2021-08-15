@@ -1,5 +1,6 @@
 using Domain.Entities;
 using Domain.Interfaces.Services;
+using Domain.Interfaces.Visitors;
 using Domain.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -9,7 +10,10 @@ namespace Api.Controllers
     [Route("api/naturalperson")]
     public class NaturalPersonController : PersonController<NaturalPerson>
     {
-        public NaturalPersonController(ILogger<PersonController<NaturalPerson>> logger, IPersonService personService) : base(logger, personService)
+        public NaturalPersonController(
+            ILogger<PersonController<NaturalPerson>> logger,
+            IPersonService personService,
+            IPersonJsonVisitor personJsonVisitor) : base(logger, personService, personJsonVisitor)
         {
         }
 

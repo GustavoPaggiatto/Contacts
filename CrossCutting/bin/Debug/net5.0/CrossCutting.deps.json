@@ -11,7 +11,8 @@
           "Data": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
-          "Service": "1.0.0"
+          "Service": "1.0.0",
+          "Visitor": "1.0.0"
         },
         "runtime": {
           "CrossCutting.dll": {}
@@ -100,6 +101,15 @@
         "runtime": {
           "Service.dll": {}
         }
+      },
+      "Visitor/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "runtime": {
+          "Visitor.dll": {}
+        }
       }
     }
   },
@@ -162,6 +172,11 @@
       "sha512": ""
     },
     "Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Visitor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

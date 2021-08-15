@@ -17,3 +17,5 @@ C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\obj\Debug\net5.0\Cross
 C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\obj\Debug\net5.0\CrossCutting.dll
 C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\obj\Debug\net5.0\ref\CrossCutting.dll
 C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\obj\Debug\net5.0\CrossCutting.pdb
+C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\bin\Debug\net5.0\Visitor.dll
+C:\Users\Gustavo\Documents\Projetos\Contacts\CrossCutting\bin\Debug\net5.0\Visitor.pdb

@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces.Services;
+using Domain.Interfaces.Visitors;
 using Domain.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,28 +17,64 @@ namespace Api.Controllers
     {
         protected readonly ILogger<PersonController<T>> _logger;
         protected readonly IPersonService _personService;
+        protected readonly IPersonJsonVisitor _jsonVisitor;
 
-        public PersonController(ILogger<PersonController<T>> logger, IPersonService personService)
+        public PersonController(
+            ILogger<PersonController<T>> logger,
+            IPersonService personService,
+            IPersonJsonVisitor jsonVisitor)
         {
-            _logger = logger;
+            this._logger = logger;
             this._personService = personService;
+            this._jsonVisitor = jsonVisitor;
         }
 
         [HttpGet]
         [Route("api/getpersons")]
-        public JsonResult Get()
+        public Result<string> Get()
         {
-            this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
-
-            var result = this._personService.Get();
-
-            this._logger.LogTrace("Finalizing Get(); class: PersonController; layer: Api.");
-
-            return new JsonResult(result, new JsonSerializerOptions()
+            try
             {
-                IgnoreReadOnlyFields = false,
-                IgnoreReadOnlyProperties = false
-            });
+                this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
+
+                var result = new Result<string>();
+                var pResult = this._personService.Get();
+
+                if (result.HasError)
+                {
+                    result.AddError(result.Errors.First());
+                    return result;
+                }
+                else
+                {
+                    string content = "[";
+
+                    foreach (var person in pResult.Content)
+                    {
+                        var vResult = this._jsonVisitor.Visit(person);
+
+                        if (vResult.HasError)
+                        {
+                            result.AddError(vResult.Errors.First());
+                            return result;
+                        }
+                        else
+                        {
+                            content += this._jsonVisitor.GetJson() + ",";
+                        }
+                    }
+
+                    content = content.Substring(0, content.Length - 1);
+                    content += "]";
+                    result.Content = content;
+
+                    return result;
+                }
+            }
+            finally
+            {
+                this._logger.LogTrace("Finalizing Get(); class: PersonController; layer: Api.");
+            }
         }
 
         protected Result Insert(T person)
