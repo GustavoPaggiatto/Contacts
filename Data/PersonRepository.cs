@@ -89,6 +89,34 @@ namespace Data
             return result;
         }
 
+        public override Result<Person> Get(int id)
+        {
+            var result = new Result<Person>();
+
+            this._logger.LogTrace("Initializing Get(); class: PersonRepository; layer: Data.");
+
+            try
+            {
+                var persons = new List<Person>();
+
+                if (_entities.Count > 0)
+                {
+                    result.Content = _entities[id];
+                }
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError("Error while get Person by Id.", ex);
+                result.AddError("There was an error while getting the contact by Id, please try again.");
+            }
+            finally
+            {
+                this._logger.LogTrace("Finalizing Get(); class: PersonRepository; layer: Data.");
+            }
+
+            return result;
+        }
+
         public override Result Insert(Person instance)
         {
             var result = new Result();

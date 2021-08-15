@@ -121,6 +121,17 @@ namespace Service
             return result;
         }
 
+        public virtual Result<T> Get(int id)
+        {
+            this._logger.LogTrace("Initializing Get(); class: BaseService; layer: Service.");
+
+            var result = this._repository.Get(id);
+
+            this._logger.LogTrace("Finalizing Delete(); class: BaseService; layer: Service.");
+
+            return result;
+        }
+
         public virtual void Dispose()
         {
             this._repository.Dispose();

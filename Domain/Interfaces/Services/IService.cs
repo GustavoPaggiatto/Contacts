@@ -11,5 +11,6 @@ namespace Domain.Interfaces.Services
         Result Update(T instance);
         Result Delete(T instance);
         Result<IEnumerable<T>> Get();
+        Result<T> Get(int id);
     }
 }

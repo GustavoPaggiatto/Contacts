@@ -1,0 +1,28 @@
+<mat-card style="margin-top: 10px;">
+    <mat-card-title>Contact Details</mat-card-title>
+    <mat-card-content>
+        <div class="data-padding">
+            <label><strong>Code: </strong></label> {{person.id}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Address: </strong></label> {{person.address.line}} {{person.addressNumber}} {{person.addressComplement}}, {{person.address.city}}, {{person.address.state}} - {{person.address.country}}.
+        </div>
+        <div class="data-padding">
+            <label><strong>CPF: </strong></label> {{person.document}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Name: </strong></label> {{person.name}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Birthdate: </strong></label> {{person.birthDate}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Gender: </strong></label>
+            <label *ngIf="person.gender === 0; else female">Male</label>
+            <ng-template #female>Female</ng-template>
+        </div>
+    </mat-card-content>
+</mat-card>
+<div style="margin-top: 10px; text-align: center;">
+    <button mat-raised-button color="primary" [routerLink]="['']">Back to Contact List</button>
+</div>

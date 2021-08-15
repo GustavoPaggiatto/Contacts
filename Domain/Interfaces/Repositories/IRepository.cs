@@ -11,5 +11,6 @@ namespace Domain.Interfaces.Repositories
         Result Update(T instance);
         Result Delete(T instance);
         Result<IEnumerable<T>> Get();
+        Result<T> Get(int id);
     }
 }

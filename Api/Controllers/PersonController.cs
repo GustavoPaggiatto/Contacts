@@ -30,7 +30,7 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        [Route("api/getpersons")]
+        [Route("getpersons")]
         public Result<IEnumerable<PersonDto>> Get()
         {
             this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
@@ -77,6 +77,17 @@ namespace Api.Controllers
             var result = this._personService.Delete(instance);
 
             this._logger.LogTrace("Finalizing Delete(); class: PersonController; layer: Api.");
+
+            return result;
+        }
+
+        protected Result<Person> GetById(int id)
+        {
+            this._logger.LogTrace("Initializing GetById(); class: PersonController; layer: Api.");
+
+            var result = this._personService.Get(id);
+
+            this._logger.LogTrace("Finalizing GetById(); class: PersonController; layer: Api.");
 
             return result;
         }

@@ -1,0 +1,77 @@
+<mat-card style="margin-top: 10px;">
+    <mat-card-title>New Contact</mat-card-title>
+    <mat-card-content>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>Company Name:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Company Name" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>Trade Name:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Trade Name" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>CNPJ:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="CNPJ" mask="00.000.000/0000-00" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Address Line One" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-1">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Number" mask="0000" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-5">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Address Line Two (Complement)" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="City" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="State" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Country" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="ZipCode" mask="00000-000" />
+                </mat-form-field>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+<div style="margin-top: 10px; text-align: center;">
+    <button mat-raised-button color="primary" [routerLink]="['']">Back to Contact List</button>
+</div>

@@ -1,0 +1,23 @@
+<mat-card style="margin-top: 10px;">
+    <mat-card-title>Contact Details</mat-card-title>
+    <mat-card-content>
+        <div class="data-padding">
+            <label><strong>Code: </strong></label> {{person.id}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Address: </strong></label> {{person.address.line}} {{person.addressNumber}} {{person.addressComplement}}, {{person.address.city}}, {{person.address.state}} - {{person.address.country}}.
+        </div>
+        <div class="data-padding">
+            <label><strong>CNPJ: </strong></label> {{person.document}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Company Name: </strong></label> {{person.companyName}}
+        </div>
+        <div class="data-padding">
+            <label><strong>Trade Name: </strong></label> {{person.tradeName}}
+        </div>
+    </mat-card-content>
+</mat-card>
+<div style="margin-top: 10px; text-align: center;">
+    <button mat-raised-button color="primary" [routerLink]="['']">Back to Contact List</button>
+</div>

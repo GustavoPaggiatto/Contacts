@@ -1,3 +1,4 @@
+using System.Linq;
 using Domain.Entities;
 using Domain.Interfaces.Adapters;
 using Domain.Interfaces.Services;
@@ -36,6 +37,21 @@ namespace Api.Controllers
         public new Result Delete([FromBody] LegalPerson person)
         {
             return base.Delete(person);
+        }
+
+        [HttpGet]
+        [Route("getbyid")]
+        public new Result<LegalPerson> GetById(int id)
+        {
+            var result = base.GetById(id);
+            var legalResult = new Result<LegalPerson>();
+
+            legalResult.Content = result.Content as LegalPerson;
+
+            if (result.HasError)
+                legalResult.AddError(result.Errors.First());
+
+            return legalResult;
         }
     }
 }

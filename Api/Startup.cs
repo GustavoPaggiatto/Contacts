@@ -28,7 +28,18 @@ namespace Api
         {
             CrossCutting.Register.Set(services);
             
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options =>
+                {
+                    options.AllowAnyOrigin();
+                    options.AllowAnyHeader();
+                    options.AllowAnyMethod();
+                });
+            });
+            
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" });
@@ -44,6 +55,13 @@ namespace Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api v1"));
             }
+
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin();
+                options.AllowAnyHeader();
+                options.AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
 

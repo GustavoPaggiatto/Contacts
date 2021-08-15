@@ -20,6 +20,8 @@ namespace Data
 
         public abstract Result<IEnumerable<T>> Get();
 
+        public abstract Result<T> Get(int id);
+
         public abstract Result Insert(T instance);
 
         public abstract Result Update(T instance);
