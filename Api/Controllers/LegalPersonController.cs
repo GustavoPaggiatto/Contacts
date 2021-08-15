@@ -1,6 +1,6 @@
 using Domain.Entities;
+using Domain.Interfaces.Adapters;
 using Domain.Interfaces.Services;
-using Domain.Interfaces.Visitors;
 using Domain.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,7 +13,7 @@ namespace Api.Controllers
         public LegalPersonController(
             ILogger<PersonController<LegalPerson>> logger,
             IPersonService personService,
-            IPersonJsonVisitor personJsonVisitor) : base(logger, personService, personJsonVisitor)
+            IPersonDtoAdapter dtoAdapter) : base(logger, personService, dtoAdapter)
         {
         }
 

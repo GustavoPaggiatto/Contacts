@@ -69,6 +69,19 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Adapter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Adapter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Adapter.dll": {}
+        }
+      },
       "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -105,20 +118,6 @@
         },
         "runtime": {
           "bin/placeholder/Service.dll": {}
-        }
-      },
-      "Visitor/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Microsoft.Extensions.Logging": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Visitor.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Visitor.dll": {}
         }
       }
     }
@@ -254,6 +253,11 @@
         "version.txt"
       ]
     },
+    "Adapter/1.0.0": {
+      "type": "project",
+      "path": "../Adapter/Adapter.csproj",
+      "msbuildProject": "../Adapter/Adapter.csproj"
+    },
     "Data/1.0.0": {
       "type": "project",
       "path": "../Data/Data.csproj",
@@ -268,20 +272,15 @@
       "type": "project",
       "path": "../Service/Service.csproj",
       "msbuildProject": "../Service/Service.csproj"
-    },
-    "Visitor/1.0.0": {
-      "type": "project",
-      "path": "../Visitor/Visitor.csproj",
-      "msbuildProject": "../Visitor/Visitor.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Adapter >= 1.0.0",
       "Data >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
-      "Service >= 1.0.0",
-      "Visitor >= 1.0.0"
+      "Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -316,6 +315,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Adapter\\Adapter.csproj": {
+              "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Adapter\\Adapter.csproj"
+            },
             "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Data\\Data.csproj"
             },
@@ -324,9 +326,6 @@
             },
             "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Service\\Service.csproj": {
               "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Service\\Service.csproj"
-            },
-            "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Visitor\\Visitor.csproj": {
-              "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Visitor\\Visitor.csproj"
             }
           }
         }

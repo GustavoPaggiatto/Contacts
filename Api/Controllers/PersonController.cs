@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Domain.Entities;
+using Domain.Interfaces.Adapters;
 using Domain.Interfaces.Services;
-using Domain.Interfaces.Visitors;
 using Domain.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -17,64 +17,35 @@ namespace Api.Controllers
     {
         protected readonly ILogger<PersonController<T>> _logger;
         protected readonly IPersonService _personService;
-        protected readonly IPersonJsonVisitor _jsonVisitor;
+        protected readonly IPersonDtoAdapter _dtoAdapter;
 
         public PersonController(
             ILogger<PersonController<T>> logger,
             IPersonService personService,
-            IPersonJsonVisitor jsonVisitor)
+            IPersonDtoAdapter dtoAdapter)
         {
             this._logger = logger;
             this._personService = personService;
-            this._jsonVisitor = jsonVisitor;
+            this._dtoAdapter = dtoAdapter;
         }
 
         [HttpGet]
         [Route("api/getpersons")]
-        public Result<string> Get()
+        public Result<IEnumerable<PersonDto>> Get()
         {
-            try
-            {
-                this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
+            this._logger.LogTrace("Initializing Get(); class: PersonController; layer: Api.");
 
-                var result = new Result<string>();
-                var pResult = this._personService.Get();
+            var result = new Result<IEnumerable<PersonDto>>();
+            var pResult = this._personService.Get();
 
-                if (result.HasError)
-                {
-                    result.AddError(result.Errors.First());
-                    return result;
-                }
-                else
-                {
-                    string content = "[";
+            if (pResult.HasError)
+                result.AddError(pResult.Errors.First());
+            else
+                result.Content = this._dtoAdapter.Adaptee(pResult.Content);
 
-                    foreach (var person in pResult.Content)
-                    {
-                        var vResult = this._jsonVisitor.Visit(person);
+            this._logger.LogTrace("Finalizing Get(); class: PersonController; layer: Api.");
 
-                        if (vResult.HasError)
-                        {
-                            result.AddError(vResult.Errors.First());
-                            return result;
-                        }
-                        else
-                        {
-                            content += this._jsonVisitor.GetJson() + ",";
-                        }
-                    }
-
-                    content = content.Substring(0, content.Length - 1);
-                    content += "]";
-                    result.Content = content;
-
-                    return result;
-                }
-            }
-            finally
-            {
-                this._logger.LogTrace("Finalizing Get(); class: PersonController; layer: Api.");
-            }
+            return result;
         }
 
         protected Result Insert(T person)

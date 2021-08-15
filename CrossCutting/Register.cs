@@ -1,11 +1,11 @@
 ﻿using System;
+using Adapter;
 using Data;
+using Domain.Interfaces.Adapters;
 using Domain.Interfaces.Repositories;
 using Domain.Interfaces.Services;
-using Domain.Interfaces.Visitors;
 using Microsoft.Extensions.DependencyInjection;
 using Service;
-using Visitor;
 
 namespace CrossCutting
 {
@@ -15,7 +15,7 @@ namespace CrossCutting
         {
             services.AddScoped<IPersonService, PersonService>();
             services.AddScoped<IPersonRepository, PersonRepository>();
-            services.AddScoped<IPersonJsonVisitor, PersonJsonVisitor>();
+            services.AddScoped<IPersonDtoAdapter, PersonDtoAdapter>();
         }
     }
 }
