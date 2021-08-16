@@ -27,25 +27,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gustavo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\miragustavo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Adapter\\Adapter.csproj",
+      "projectUniqueName": "C:\\Users\\miragustavo\\Documents\\Study\\Contacts\\Adapter\\Adapter.csproj",
       "projectName": "Adapter",
-      "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Adapter\\Adapter.csproj",
-      "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Adapter\\obj\\",
+      "projectPath": "C:\\Users\\miragustavo\\Documents\\Study\\Contacts\\Adapter\\Adapter.csproj",
+      "packagesPath": "C:\\Users\\miragustavo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\miragustavo\\Documents\\Study\\Contacts\\Adapter\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\miragustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,8 +53,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Gustavo\\Documents\\Projetos\\Contacts\\Domain\\Domain.csproj"
+            "C:\\Users\\miragustavo\\Documents\\Study\\Contacts\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\miragustavo\\Documents\\Study\\Contacts\\Domain\\Domain.csproj"
             }
           }
         }
@@ -88,7 +83,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

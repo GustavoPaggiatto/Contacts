@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { ConfigService } from 'src/services/configService';
 import { Result, ResultContent } from 'src/models/result';
 import { MessageService } from 'src/services/messageService';
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-list',
@@ -18,7 +19,7 @@ export class ListComponent implements AfterViewInit {
   private _messager: MessageService;
   public displayedColumns: string[] = ['Name', 'Document', 'Address', 'Options'];
   public dataSource: MatTableDataSource<PersonDto>;
-  
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatTable) table: MatTable<any>;
 
@@ -34,6 +35,30 @@ export class ListComponent implements AfterViewInit {
             this._messager.showError(result.errors[0]);
             return;
           }
+
+          for (let p of result.content) {
+            if (p.suffix === "legalperson") {
+              p.document = p.document.substr(0, 2) +
+                "." +
+                p.document.substr(2, 3) +
+                "." +
+                p.document.substr(5, 3) +
+                "/" +
+                p.document.substr(8, 4) +
+                "-" +
+                p.document.substr(12, 2);
+            }
+            else {
+              p.document = p.document.substr(0, 3) +
+                "." +
+                p.document.substr(3, 3) +
+                "." +
+                p.document.substr(6, 3) +
+                "-" +
+                p.document.substr(9, 2)
+            }
+          }
+
           this.dataSource = new MatTableDataSource<PersonDto>(result.content);
           this.dataSource.paginator = this.paginator;
         },
@@ -59,11 +84,11 @@ export class ListComponent implements AfterViewInit {
           }
 
           let ix = this.dataSource.data.findIndex(ix => ix.id == id);
-          
+
           this.dataSource.data.splice(ix, 1);
           this.dataSource = new MatTableDataSource<PersonDto>(this.dataSource.data);
           this.table.renderRows();
-          
+
           this._messager.showSuccess("Contact was deleted with success!", function () {
             console.log("Contact " + id + " was deleted.");
           });

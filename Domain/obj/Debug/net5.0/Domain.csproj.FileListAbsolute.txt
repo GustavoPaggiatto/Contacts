@@ -10,3 +10,15 @@ C:\Users\Gustavo\Documents\Projetos\Contacts\Domain\obj\Debug\net5.0\Domain.cspr
 C:\Users\Gustavo\Documents\Projetos\Contacts\Domain\obj\Debug\net5.0\Domain.dll
 C:\Users\Gustavo\Documents\Projetos\Contacts\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Users\Gustavo\Documents\Projetos\Contacts\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\miragustavo\Documents\Study\Contacts\Domain\obj\Debug\net5.0\Domain.pdb
