@@ -28,9 +28,7 @@ export class MessageService {
                 text: message,
                 icon: "success",
                 type: "success",
-                onClose: function () {
-                    callback();
-                }
+                onClose: callback
             });
         }
         else {

@@ -5,6 +5,8 @@ import { CreatenaturalComponent } from './createnatural/createnatural.component'
 import { DetaillegalpersonComponent } from './detaillegalperson/detaillegalperson.component';
 import { DetailnaturalpersonComponent } from './detailnaturalperson/detailnaturalperson.component';
 import { ListComponent } from './list/list.component';
+import { UpdatelegalpersonComponent } from './updatelegalperson/updatelegalperson.component';
+import { UpdatenaturalpersonComponent } from './updatenaturalperson/updatenaturalperson.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path: "detaillegalperson",
     component: DetaillegalpersonComponent
+  },
+  {
+    path: "updatelegalperson",
+    component: UpdatelegalpersonComponent
+  },
+  {
+    path: "updatenaturalperson",
+    component: UpdatenaturalpersonComponent
   }
 ];
 

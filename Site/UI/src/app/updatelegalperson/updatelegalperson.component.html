@@ -1,0 +1,88 @@
+<mat-card style="margin-top: 10px;">
+    <mat-card-title>Change Contact</mat-card-title>
+    <mat-card-content>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>Code:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput [(ngModel)]="person.id" readonly />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>Company Name:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Company Name" [(ngModel)]="person.companyName" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>Trade Name:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Trade Name" [(ngModel)]="person.tradeName" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label><strong>CNPJ:</strong></label>
+            </div>
+            <div class="col-sm-10">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="CNPJ" mask="00.000.000/0000-00" [(ngModel)]="person.document" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Address Line One" [(ngModel)]="person.address.line" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-1">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Number" mask="0*" [(ngModel)]="person.addressNumber" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-5">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Address Line Two (Complement)" [(ngModel)]="person.addressComplement" />
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="City" [(ngModel)]="person.address.city" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="State" [(ngModel)]="person.address.state" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Country" [(ngModel)]="person.address.country" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="ZipCode" mask="00000-000" [(ngModel)]="person.address.zipCode" />
+                </mat-form-field>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+<div class="d-flex justify-content-center" style="margin-top: 10px">
+    <button mat-raised-button color="primary" [routerLink]="['']">Back to Contact List</button>
+    <button mat-raised-button (click)="update()" style="margin-left: 5px;">Save</button>
+</div>

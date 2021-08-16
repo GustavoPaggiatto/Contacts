@@ -21,6 +21,8 @@ import { CreatenaturalComponent } from './createnatural/createnatural.component'
 import { DetailnaturalpersonComponent } from './detailnaturalperson/detailnaturalperson.component';
 import { DetaillegalpersonComponent } from './detaillegalperson/detaillegalperson.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { UpdatelegalpersonComponent } from './updatelegalperson/updatelegalperson.component';
+import { UpdatenaturalpersonComponent } from './updatenaturalperson/updatenaturalperson.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NgxMaskModule, IConfig } from 'ngx-mask';
     CreatelegalComponent,
     CreatenaturalComponent,
     DetailnaturalpersonComponent,
-    DetaillegalpersonComponent
+    DetaillegalpersonComponent,
+    UpdatelegalpersonComponent,
+    UpdatenaturalpersonComponent
   ],
   imports: [
     BrowserModule,

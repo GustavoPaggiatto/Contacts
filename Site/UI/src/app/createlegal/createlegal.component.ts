@@ -56,6 +56,11 @@ export class CreatelegalComponent {
       return;
     }
 
+    if (this.person.document.length != 14) {
+      this._messager.showError("Document must be 14 numbers.");
+      return;
+    }
+
     if (this.person.address.zipCode == null) {
       this._messager.showError("Zipcode was not informed.");
       return;
