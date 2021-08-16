@@ -21,6 +21,8 @@
    d. Swagger.
    
    e. XUnit.
+   
+   f. IDE: Visual Studio Code.
 
 3. Instructions to run:
 
