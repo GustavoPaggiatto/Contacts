@@ -41,6 +41,15 @@ export class DetaillegalpersonComponent {
 
           this.person = result.content;
           this.person.id = id;
+          this.person.document = this.person.document.substr(0,2) +
+          "." +
+          this.person.document.substr(2,3) +
+          "." +
+          this.person.document.substr(5,3) +
+          "/" +
+          this.person.document.substr(8,4) +
+          "-" +
+          this.person.document.substr(12,2);
         },
         error => {
           this._messager.showError("An error occurred while get details, please try again.");

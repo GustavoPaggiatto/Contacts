@@ -42,6 +42,13 @@ export class DetailnaturalpersonComponent {
 
           this.person = result.content;
           this.person.id = id;
+          this.person.document = this.person.document.substr(0, 3) +
+            "." +
+            this.person.document.substr(3, 3) +
+            "." +
+            this.person.document.substr(6, 3) +
+            "-" +
+            this.person.document.substr(9, 2)
         },
         error => {
           this._messager.showError("An error occurred while get details, please try again.");

@@ -14,7 +14,7 @@
             <label><strong>Name: </strong></label> {{person.name}}
         </div>
         <div class="data-padding">
-            <label><strong>Birthdate: </strong></label> {{person.birthDate}}
+            <label><strong>Birthdate: </strong></label> {{person.birthDate | date: 'dd/MM/yyyy'}}
         </div>
         <div class="data-padding">
             <label><strong>Gender: </strong></label>
