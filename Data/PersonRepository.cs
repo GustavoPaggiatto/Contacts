@@ -9,21 +9,38 @@ using Microsoft.Extensions.Logging;
 
 namespace Data
 {
+    /// <summary>
+    /// PersonRepository class is responsible to persist person objects. In this case de persistency is
+    /// im memory.
+    /// </summary>
     public sealed class PersonRepository : BaseRepository<Person>, IPersonRepository
     {
         static ConcurrentDictionary<int, Person> _entities;
         static object _lock;
 
+        /// <summary>
+        /// Static constructor to initialize thread safe Dictionary of persisted entities.
+        /// </summary>
         static PersonRepository()
         {
             _entities = new ConcurrentDictionary<int, Person>();
             _lock = new object();
         }
 
+        /// <summary>
+        /// Constructor tha receive logger instance.
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <returns></returns>
         public PersonRepository(ILogger<PersonRepository> logger) : base(logger)
         {
         }
 
+        /// <summary>
+        /// Delete method.
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <returns></returns>
         public override Result Delete(Person instance)
         {
             var result = new Result();
@@ -56,6 +73,10 @@ namespace Data
             return result;
         }
 
+        /// <summary>
+        /// Get method tha return all entities.
+        /// </summary>
+        /// <returns></returns>
         public override Result<IEnumerable<Person>> Get()
         {
             var result = new Result<IEnumerable<Person>>();
@@ -89,6 +110,11 @@ namespace Data
             return result;
         }
 
+        /// <summary>
+        /// Get overload method (by id).
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public override Result<Person> Get(int id)
         {
             var result = new Result<Person>();
@@ -117,6 +143,11 @@ namespace Data
             return result;
         }
 
+        /// <summary>
+        /// Insert method.
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <returns></returns>
         public override Result Insert(Person instance)
         {
             var result = new Result();
@@ -148,6 +179,11 @@ namespace Data
             return result;
         }
 
+        /// <summary>
+        /// Update method.
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <returns></returns>
         public override Result Update(Person instance)
         {
             var result = new Result();

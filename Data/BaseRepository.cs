@@ -7,6 +7,11 @@ using Microsoft.Extensions.Logging;
 
 namespace Data
 {
+    /// <summary>
+    /// Base Repository abstract class corresponding of Repository pattern.
+    /// This layer is responsible to persist objects (Single Responsability of SOLID).
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
         protected readonly ILogger<IRepository<T>> _logger;

@@ -9,6 +9,9 @@ using Service;
 
 namespace CrossCutting
 {
+    /// <summary>
+    /// This layer is CrossCutting of DDD concepts. It is responsible for configuring dependencies (SoC and IoC concepts).
+    /// </summary>
     public static class Register
     {
         public static void Set(IServiceCollection services)

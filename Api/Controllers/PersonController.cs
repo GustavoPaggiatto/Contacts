@@ -12,6 +12,10 @@ using Microsoft.Extensions.Logging;
 
 namespace Api.Controllers
 {
+    /// <summary>
+    /// Abstract Person controller to implement base CRUD methods (generic types).
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [ApiController]
     public abstract class PersonController<T> : ControllerBase where T : Person
     {

@@ -6,6 +6,9 @@ using Domain.Results;
 
 namespace Adapter
 {
+    /// <summary>
+    /// PersonDto derived adapter class.
+    /// </summary>
     public sealed class PersonDtoAdapter : BaseAdapter<Person, PersonDto>, IPersonDtoAdapter
     {
         public override IEnumerable<PersonDto> Adaptee(IEnumerable<Person> inputs)

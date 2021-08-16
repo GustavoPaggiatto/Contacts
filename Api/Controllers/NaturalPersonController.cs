@@ -8,6 +8,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Api.Controllers
 {
+    /// <summary>
+    /// NaturalPersonController (inherit from PersonController to treat NaturalPerson objects).
+    /// </summary>
     [Route("api/naturalperson")]
     public class NaturalPersonController : PersonController<NaturalPerson>
     {
@@ -18,6 +21,11 @@ namespace Api.Controllers
         {
         }
 
+        /// <summary>
+        /// Insert method.
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("insert")]
         public new Result Insert([FromBody] NaturalPerson person)
@@ -25,6 +33,11 @@ namespace Api.Controllers
             return base.Insert(person);
         }
 
+        /// <summary>
+        /// Update method.
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("update")]
         public new Result Update([FromBody] NaturalPerson person)
@@ -32,6 +45,11 @@ namespace Api.Controllers
             return base.Update(person);
         }
 
+        /// <summary>
+        /// Delete method.
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("delete")]
         public new Result Delete([FromBody] NaturalPerson person)
@@ -39,6 +57,11 @@ namespace Api.Controllers
             return base.Delete(person);
         }
 
+        /// <summary>
+        /// Get by Id (code) method.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("getbyid")]
         public new Result<NaturalPerson> GetById(int id)
