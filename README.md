@@ -6,7 +6,9 @@
    
    c. SOLID: implementation of some items, such as single responsibility and DI. 
    
-   d. Hexagonal Archtect: Use of auxiliary layers to format returns (adapter layer) so as not to overload the business layer. 
+   d. Hexagonal Archtect: Use of auxiliary layers to format returns (adapter layer) so as not to overload the business layer.
+   
+   e. Unity Tests: Test project layer with test cases.
 
 2. Tecnologies:
 
@@ -17,6 +19,8 @@
    c. Log4Net.
    
    d. Swagger.
+   
+   e. XUnit.
 
 3. Instructions to run:
 
